@@ -3,18 +3,23 @@
 
 <head>
 
-    <!-- Basic Meta -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Astha | Portfolio</title>
 
     <meta name="description"
-        content="Official Portfolio of Astha - Computer Science & Engineering Student">
+        content="Astha - Computer Science Engineering Student Portfolio">
+
+    <meta name="keywords"
+        content="Astha, Portfolio, Web Developer, Software Developer">
 
     <!-- Google Font -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
     <link rel="preconnect"
         href="https://fonts.gstatic.com"
@@ -28,11 +33,6 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- AOS -->
-
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-
     <!-- CSS -->
 
     <link rel="stylesheet"
@@ -42,51 +42,47 @@
 
 <body>
 
-    <!-- ================= LOADER ================= -->
-
-    <div id="loader">
-
-        <div class="spinner"></div>
-
-    </div>
-
     <!-- ================= HEADER ================= -->
 
-    <header>
+    <header class="header">
 
-        <div class="logo">
+        <div class="container">
 
-            <a href="#">Astha</a>
+            <div class="logo">
 
-        </div>
+                <a href="#home">
 
-        <nav>
+                    Astha
 
-            <ul>
+                </a>
 
-                <li><a href="#home">Home</a></li>
+            </div>
 
-                <li><a href="#about">About</a></li>
+            <nav class="navbar">
 
-                <li><a href="#education">Education</a></li>
+                <ul>
 
-                <li><a href="#skills">Skills</a></li>
+                    <li><a href="#home">Home</a></li>
 
-                <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
 
-                <li><a href="#contact">Contact</a></li>
+                    <li><a href="#education">Education</a></li>
 
-            </ul>
+                    <li><a href="#skills">Skills</a></li>
 
-        </nav>
+                    <li><a href="#projects">Projects</a></li>
 
-        <div class="nav-buttons">
+                    <li><a href="#contact">Contact</a></li>
 
-            <button id="theme-btn">
+                </ul>
 
-                <i class="fa-solid fa-moon"></i>
+            </nav>
 
-            </button>
+            <div class="menu-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </div>
 
         </div>
 
@@ -97,83 +93,416 @@
     <section id="home"
         class="hero">
 
-        <div class="hero-text"
-            data-aos="fade-right">
+        <div class="container hero-container">
 
-            <p>Hello, I'm</p>
+            <div class="hero-content">
 
-            <h1>Astha</h1>
+                <h4>
 
-            <h2>
+                    Hello, I'm
 
-                B.Tech Computer Science & Engineering Student
+                </h4>
 
-            </h2>
+                <h1>
 
-            <h3>
+                    Astha
 
-                <span id="typing"></span>
+                </h1>
 
-            </h3>
+                <h2>
 
-            <p>
+                    Computer Science & Engineering Student
 
-                Passionate about Software Development,
-                Web Development and creating beautiful,
-                responsive websites with modern technologies.
+                </h2>
 
-            </p>
+                <p>
 
-            <div class="hero-buttons">
+                    Aspiring Software Developer and Web Developer passionate
+                    about building responsive websites and solving real-world
+                    problems through technology.
 
-                <a href="#projects"
-                    class="btn">
+                </p>
 
-                    View Projects
+                <div class="hero-buttons">
 
-                </a>
+                    <a href="#projects"
+                        class="btn">
 
-                <a href="assets/resume/Astha_Resume.pdf"
-                    class="btn secondary">
+                        View Projects
 
-                    Download Resume
+                    </a>
 
-                </a>
+                    <a href="assets/resume/Astha_Resume.pdf"
+                        class="btn btn-outline">
+
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/astha22-dev"
+                        target="_blank">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/astha-sharma-a167a03b5"
+                        target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="mailto:ashtha.kittu@gmail.com">
+
+                        <i class="fas fa-envelope"></i>
+
+                    </a>
+
+                </div>
 
             </div>
 
-            <div class="social">
+            <div class="hero-image">
 
-                <a href="https://github.com/astha22-dev"
-                    target="_blank">
-
-                    <i class="fab fa-github"></i>
-
-                </a>
-
-                <a href="https://www.linkedin.com/in/astha-sharma-a167a03b5"
-                    target="_blank">
-
-                    <i class="fab fa-linkedin"></i>
-
-                </a>
-
-                <a href="mailto:ashtha.kittu@gmail.com">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                </a>
+                <img src="assets/images/profile.jpg"
+                    alt="Astha Profile">
 
             </div>
-
-        </div>
-
-        <div class="hero-image"
-            data-aos="fade-left">
-
-            <img src="assets/images/profile.jpg"
-                alt="Astha">
 
         </div>
 
     </section>
+        <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>About Me</h2>
+
+                <p>Get to know me better</p>
+
+            </div>
+
+            <div class="about-container">
+
+                <div class="about-image">
+
+                    <img src="assets/images/profile.jpg"
+                        alt="About Astha">
+
+                </div>
+
+                <div class="about-content">
+
+                    <h3>
+
+                        Who Am I?
+
+                    </h3>
+
+                    <p>
+
+                        Hello! I'm <strong>Astha</strong>, a passionate
+                        Computer Science and Engineering student at
+                        Rajkiya Engineering College, Mainpuri.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy learning modern web technologies,
+                        building responsive websites,
+                        improving my programming skills,
+                        and solving real-world problems through code.
+
+                    </p>
+
+                    <p>
+
+                        My goal is to become a skilled Software Engineer
+                        and contribute to innovative technology projects.
+
+                    </p>
+
+                    <div class="about-info">
+
+                        <div>
+
+                            <span>Name</span>
+
+                            <h4>Astha</h4>
+
+                        </div>
+
+                        <div>
+
+                            <span>Email</span>
+
+                            <h4>ashtha.kittu@gmail.com</h4>
+
+                        </div>
+
+                        <div>
+
+                            <span>Location</span>
+
+                            <h4>Agra, Uttar Pradesh</h4>
+
+                        </div>
+
+                        <div>
+
+                            <span>Branch</span>
+
+                            <h4>Computer Science & Engineering</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="education">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Education</h2>
+
+                <p>My Academic Journey</p>
+
+            </div>
+
+            <div class="education-card">
+
+                <div class="education-year">
+
+                    2025 – 2029
+
+                </div>
+
+                <div class="education-details">
+
+                    <h3>
+
+                        Bachelor of Technology (B.Tech)
+
+                    </h3>
+
+                    <h4>
+
+                        Computer Science & Engineering
+
+                    </h4>
+
+                    <p>
+
+                        Rajkiya Engineering College,
+                        Mainpuri
+
+                    </p>
+
+                    <p>
+
+                        Dr. A.P.J. Abdul Kalam Technical University (AKTU)
+
+                    </p>
+
+                    <p>
+
+                        Current CGPA:
+                        <strong>8.05</strong>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="skills">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Skills</h2>
+
+                <p>Technologies I Work With</p>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>C Programming</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Projects</h2>
+
+                <p>My Recent Work</p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+
+                    A modern responsive personal portfolio website
+                    developed using HTML, CSS and JavaScript.
+
+                </p>
+
+                <a href="https://github.com/astha22-dev"
+                    target="_blank"
+                    class="btn">
+
+                    View Project
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Contact Me</h2>
+
+                <p>Let's Connect</p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <p>
+
+                    <strong>Email :</strong>
+
+                    ashtha.kittu@gmail.com
+
+                </p>
+
+                <p>
+
+                    <strong>Location :</strong>
+
+                    Agra, Uttar Pradesh, India
+
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="https://github.com/astha22-dev"
+                        target="_blank">
+
+                        GitHub
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/astha-sharma-a167a03b5"
+                        target="_blank">
+
+                        LinkedIn
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Astha |
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
