@@ -2,51 +2,88 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Meta -->
+
+    <!-- =========================
+         Basic Meta Information
+    ========================== -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Astha's Personal Portfolio | Computer Science Engineering Student at Rajkiya Engineering College Mainpuri">
-    <meta name="keywords"
-        content="Astha, Portfolio, CSE Student, Web Developer, HTML, CSS, JavaScript">
-    <meta name="author" content="Astha">
 
     <title>Astha | Portfolio</title>
 
-    <!-- Google Font -->
+    <meta name="description"
+        content="Official portfolio of Astha, a Computer Science Engineering student passionate about software development and web technologies.">
+
+    <meta name="keywords"
+        content="Astha, Portfolio, CSE Student, Web Developer, Software Developer, HTML, CSS, JavaScript">
+
+    <meta name="author" content="Astha">
+
+    <!-- =========================
+         Google Fonts
+    ========================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- =========================
+         Font Awesome
+    ========================== -->
+
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- =========================
+         AOS Animation Library
+    ========================== -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet">
+
+    <!-- =========================
+         Main CSS
+    ========================== -->
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
 </head>
 
 <body>
 
-    <!-- ================= LOADER ================= -->
+    <!-- =========================
+           Loading Screen
+    ========================== -->
 
     <div id="loader">
-        <div class="spinner"></div>
+
+        <div class="loader-circle"></div>
+
     </div>
 
-    <!-- ================= HEADER ================= -->
+    <!-- =========================
+             Header
+    ========================== -->
 
-    <header>
+    <header class="header">
 
         <div class="logo">
-            <a href="#">Astha</a>
+
+            <a href="#home">
+
+                Astha
+
+            </a>
+
         </div>
 
-        <nav>
+        <nav class="navbar">
 
             <ul>
 
@@ -69,50 +106,75 @@
         <div class="header-buttons">
 
             <button id="theme-toggle">
+
                 <i class="fa-solid fa-moon"></i>
+
             </button>
 
-            <div id="menu-btn">
+            <button id="menu-btn">
+
                 <i class="fa-solid fa-bars"></i>
-            </div>
+
+            </button>
 
         </div>
 
     </header>
 
-    <!-- ================= HOME ================= -->
+    <!-- =========================
+             Hero Section
+    ========================== -->
 
-    <section class="home" id="home">
+    <section id="home"
+        class="hero">
 
-        <div class="home-content" data-aos="fade-right">
+        <div class="hero-content"
+            data-aos="fade-right">
 
-            <p>Hello, I'm</p>
+            <p class="greeting">
 
-            <h1>Astha</h1>
+                Hello, I'm
+
+            </p>
+
+            <h1>
+
+                Astha
+
+            </h1>
+
+            <h2>
+
+                B.Tech Computer Science Engineering Student
+
+            </h2>
 
             <h3>
-                <span id="typing"></span>
+
+                <span id="typing-text"></span>
+
             </h3>
 
-            <p class="intro">
+            <p class="hero-description">
 
-                Passionate Computer Science Engineering student at
-                Rajkiya Engineering College, Mainpuri.
-                I enjoy creating beautiful websites,
-                learning new technologies,
-                and solving real-world problems through code.
+                Passionate about software development, web technologies,
+                and continuous learning. I enjoy creating responsive
+                websites, exploring modern programming concepts,
+                and turning ideas into practical digital solutions.
 
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn">
+                <a href="#projects"
+                    class="btn">
+
                     View Projects
+
                 </a>
 
-                <a href="assets/resume/resume.pdf"
-                    class="btn btn-outline"
-                    target="_blank">
+                <a href="assets/resume/Astha_Resume.pdf"
+                    class="btn secondary">
 
                     Download Resume
 
@@ -122,35 +184,516 @@
 
             <div class="social-icons">
 
-                <a href="#">
+                <a href="https://github.com/astha22-dev"
+                    target="_blank">
+
                     <i class="fab fa-github"></i>
+
                 </a>
 
-                <a href="#">
+                <a href="https://www.linkedin.com/in/astha-sharma-a167a03b5"
+                    target="_blank">
+
                     <i class="fab fa-linkedin"></i>
-                </a>
 
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
                 </a>
 
                 <a href="mailto:ashtha.kittu@gmail.com">
+
                     <i class="fa-solid fa-envelope"></i>
+
                 </a>
 
             </div>
 
         </div>
 
-        <div class="home-image" data-aos="fade-left">
+        <div class="hero-image"
+            data-aos="fade-left">
 
-            <div class="image-box">
+            <div class="image-card">
 
                 <img src="assets/images/profile.jpg"
-                    alt="Astha">
+                    alt="Astha Profile Photo">
 
             </div>
 
         </div>
 
     </section>
+    <!-- =========================
+             About Section
+    ========================== -->
+
+    <section id="about" class="about">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>About Me</h2>
+
+            <p>Get to know me better</p>
+
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image" data-aos="fade-right">
+
+                <img src="assets/images/profile.jpg" alt="Astha">
+
+            </div>
+
+            <div class="about-content" data-aos="fade-left">
+
+                <h3>Who Am I?</h3>
+
+                <p>
+
+                    Hello! I'm <strong>Astha</strong>, a passionate
+                    Computer Science and Engineering student at
+                    <strong>Rajkiya Engineering College, Mainpuri</strong>.
+
+                </p>
+
+                <p>
+
+                    I enjoy designing responsive websites,
+                    learning new programming technologies,
+                    and improving my problem-solving skills through
+                    continuous practice.
+
+                </p>
+
+                <p>
+
+                    My goal is to become a skilled Software Developer
+                    and contribute to impactful real-world projects.
+
+                </p>
+
+                <div class="about-info">
+
+                    <div>
+
+                        <span>Name</span>
+
+                        <p>Astha</p>
+
+                    </div>
+
+                    <div>
+
+                        <span>Email</span>
+
+                        <p>ashtha.kittu@gmail.com</p>
+
+                    </div>
+
+                    <div>
+
+                        <span>Location</span>
+
+                        <p>Agra, Uttar Pradesh, India</p>
+
+                    </div>
+
+                    <div>
+
+                        <span>Education</span>
+
+                        <p>B.Tech CSE</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            Education Section
+    ========================== -->
+
+    <section id="education" class="education">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>Education</h2>
+
+            <p>My Academic Journey</p>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item" data-aos="fade-up">
+
+                <div class="timeline-content">
+
+                    <span class="year">
+
+                        2025 - 2029
+
+                    </span>
+
+                    <h3>
+
+                        Bachelor of Technology
+
+                    </h3>
+
+                    <h4>
+
+                        Computer Science & Engineering
+
+                    </h4>
+
+                    <p>
+
+                        Rajkiya Engineering College,
+                        Mainpuri
+
+                    </p>
+
+                    <p>
+
+                        Dr. A.P.J. Abdul Kalam Technical University (AKTU)
+
+                    </p>
+
+                    <p>
+
+                        Current CGPA : <strong>8.05</strong>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+              Skills Section
+    ========================== -->
+
+    <section id="skills" class="skills">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>Technical Skills</h2>
+
+            <p>Technologies I am Learning</p>
+
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card" data-aos="zoom-in">
+
+                <i class="fa-brands fa-html5"></i>
+
+                <h3>HTML5</h3>
+
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+
+                <i class="fa-brands fa-css3-alt"></i>
+
+                <h3>CSS3</h3>
+
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+
+                <i class="fa-brands fa-js"></i>
+
+                <h3>JavaScript</h3>
+
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+
+                <i class="fa-brands fa-python"></i>
+
+                <h3>Python</h3>
+
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+
+                <i class="fa-brands fa-java"></i>
+
+                <h3>Java</h3>
+
+            </div>
+
+            <div class="skill-card" data-aos="zoom-in">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>C Programming</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- =========================
+            Projects Section
+    ========================== -->
+
+    <section id="projects" class="projects">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>Projects</h2>
+
+            <p>Some of My Recent Work</p>
+
+        </div>
+
+        <div class="projects-container">
+
+            <div class="project-card" data-aos="zoom-in">
+
+                <div class="project-image">
+
+                    <img src="assets/images/project1.jpg" alt="Portfolio Website">
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+
+                        A responsive personal portfolio website built using
+                        HTML, CSS and JavaScript to showcase my skills,
+                        education and projects.
+
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/astha22-dev"
+                            target="_blank"
+                            class="btn secondary">
+
+                            Source Code
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+        Certifications Section
+    ========================== -->
+
+    <section id="certifications" class="certifications">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>Certifications</h2>
+
+            <p>Coming Soon...</p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+        Achievements Section
+    ========================== -->
+
+    <section id="achievements" class="achievements">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>Achievements</h2>
+
+            <p>Coming Soon...</p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            Contact Section
+    ========================== -->
+
+    <section id="contact" class="contact">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>Contact Me</h2>
+
+            <p>Let's Connect</p>
+
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+
+                    Feel free to contact me regarding opportunities,
+                    collaborations or any project.
+
+                </p>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>ashtha.kittu@gmail.com</span>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>Agra, Uttar Pradesh, India</span>
+
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            Footer
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>Astha</h2>
+
+            <p>
+
+                Thank you for visiting my portfolio.
+                Let's build something amazing together.
+
+            </p>
+
+            <div class="footer-social">
+
+                <a href="https://github.com/astha22-dev"
+                    target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/astha-sharma-a167a03b5"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+                <a href="mailto:ashtha.kittu@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+            <p class="copyright">
+
+                © 2026 Astha. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================
+        Scroll To Top Button
+    ========================== -->
+
+    <button id="scrollTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- =========================
+        JavaScript Libraries
+    ========================== -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Main JavaScript -->
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
